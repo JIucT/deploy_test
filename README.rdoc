@@ -3,3 +3,18 @@
 Here is deployment instructions as were used:
 
 1. capify .
+2. edit config/deploy.rb and config/deploy/<stage>.rb (https://github.com/capistrano/capistrano/wiki/2.x-From-The-Beginning#configuration)
+3. istall git to server;
+4. add server's public key to git account
+5. cap deploy:check
+6. set up capistrano-rvm or 'rvm1/capistrano3'
+7. install capistrano-nginx
+8. install capistrano-puma
+
+
+
+
+help commands
+cap -e deploy:web:disable # view task desciption
+cap -h 										# help
+https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3

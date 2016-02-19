@@ -22,8 +22,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'capistrano'
-
+gem 'puma', group: [:staging, :production]
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,6 +35,11 @@ gem 'capistrano'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'capistrano', require: false
+  gem 'capistrano-rails', '~> 1.1', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano3-nginx', '~> 2.0', require: false
+  gem 'capistrano3-puma', require: false
 end
 
 group :development do
