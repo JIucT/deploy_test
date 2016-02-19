@@ -1,0 +1,5 @@
+== README
+
+Here is deployment instructions as were used:
+
+1. capify .
