@@ -4,6 +4,7 @@ require 'capistrano/deploy'
 require 'capistrano/rvm'
 require 'capistrano/rails'
 require 'capistrano/bundler'
+require 'capistrano/postgresql'
 
 # Include default deployment tasks
 require 'capistrano/nginx'
