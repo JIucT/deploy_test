@@ -2,6 +2,7 @@
 
 Here is deployment instructions as were used:
 
+0. use chef to set up things
 1. capify .
 2. edit config/deploy.rb and config/deploy/<stage>.rb (https://github.com/capistrano/capistrano/wiki/2.x-From-The-Beginning#configuration)
 3. istall git to server;
@@ -16,5 +17,8 @@ Here is deployment instructions as were used:
 
 help commands
 cap -e deploy:web:disable # view task desciption
-cap -h 										# help
+cap -h                    # help
+cap -T #view all commands
 https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
+https://launchschool.com/blog/chef-basics-for-rails-developers #chef guide
+https://jenssegers.com/55/server-provisioning-with-chef-and-knife-solo #knife-solo guide

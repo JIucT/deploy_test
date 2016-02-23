@@ -42,6 +42,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'knife-solo'
+  gem 'librarian-chef'
+
   gem 'capistrano', require: false
   gem 'capistrano-rails', '~> 1.1', require: false
   gem 'capistrano-rvm', require: false

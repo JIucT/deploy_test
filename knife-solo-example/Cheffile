@@ -1,0 +1,2 @@
+site 'http://supermarket.getchef.com/api/v1'
+cookbook 'poise-monit'

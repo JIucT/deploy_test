@@ -1,0 +1,16 @@
+SITE
+  remote: http://supermarket.getchef.com/api/v1
+  specs:
+    poise (2.6.0)
+    poise-languages (1.3.2)
+      poise (~> 2.5)
+    poise-monit (1.1.0)
+      poise (~> 2.6)
+      poise-languages (~> 1.3)
+      poise-service (~> 1.1)
+    poise-service (1.1.1)
+      poise (~> 2.0)
+
+DEPENDENCIES
+  poise-monit (>= 0)
+
